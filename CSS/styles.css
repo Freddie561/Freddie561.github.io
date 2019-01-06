@@ -1,0 +1,469 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color: black;
+	font-family: MainFont;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.5s;
+}
+a:hover {
+	background-color: black;
+	border: none;
+	text-decoration: underline orangered;
+	
+}
+
+a:active {
+  background-color: black;
+  	border:none;
+	text-decoration: underline orangered;
+}
+
+
+@font-face{
+	font-family: MainFont;
+	src: url("../Assets/fonts/Harabara.ttf");
+}
+
+
+.container{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	overflow: hidden;
+	
+}
+
+nav{
+	top:0;
+	padding-left:3%;
+	padding-right:3%;
+	text-align: right;
+	
+	
+}
+
+footer{
+	display: block;
+	background: #000000;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;	
+	color: orangered;
+		
+}
+
+
+.main-logo img{
+	
+	float:left;
+	height:10%;
+	width:200px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	
+}
+#logo:hover{
+	background-color: black;
+	overflow: hidden;
+}
+header{
+	
+	background-color: #000000;
+	background-bottom: 1px solid orange;
+	position: fixed; /* Set the navbar to fixed position */
+  	top: 0; /* Position the navbar at the top of the page */
+ 	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	left:0;
+	right:0;
+
+}
+
+
+.dropbtn{
+	background: none;
+	color: white;
+	border: none;	
+	float: right;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 2px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	font-family: MainFont;
+	
+}
+.dropbtn:hover {
+	background-color: black;
+	border: none;
+	text-decoration: underline orangered;
+	
+}
+
+.dropbtn:active {
+  background-color: black;
+  	border:none;
+	text-decoration: underline orangered;
+}
+
+.menu-drop{
+	color: red;
+}
+.mensbutton{
+	background-color: orangered;
+	color: white;
+	padding: 10px;	
+	float: center;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 2px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	box-shadow: 0 5px #999
+	
+}
+
+
+
+.mensbutton:hover {background-color: black}
+
+.mensbutton:active {
+  background-color: black;
+  box-shadow: 0 4px #666;
+  transform: translateY(4px);
+}
+
+
+.dropdown{
+	display: inline-block;
+	padding:16px;
+	
+}
+
+.parallax{
+	background-image: url("../Assets/background.jpg");
+		min-height:600px;
+	background-attachment: fixed;
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	
+	
+}
+.mensblock{
+	
+	height:551px;
+	font-size:36px;
+	background-color: #EAE9E5;
+	width: 100%;
+	
+}
+.womensblock{
+	height:500px;
+	font-size: 36px;
+	background-color:#E7E6E2;
+	width: 100%;
+	
+}
+.parallax-womens{
+	background-image: url("../Assets/firstimage.jpg");
+		min-height:1000px;
+	background-attachment: fixed;
+		background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax-newstock{
+	background-image: url("../Assets/hp2-knits-mens.jpg");
+		min-height:1000px;
+	background-attachment: fixed;
+		background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.parallax-final{
+	background-image: url("../Assets/photo-1511632765486-a01980e01a18.jpg");
+		min-height:1000px;
+	background-attachment: fixed;
+		background-position: center top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.blocks{
+
+	width:50%;
+	float:left;
+	height:80%;
+	text-align: center;
+	
+	
+	
+	
+}
+.blocks:before {
+	
+	content: "\a0";
+  	display: block;
+  	line-height: 1px;
+  	border-top: 4px inset orangered; 
+}
+.blocks img {
+	float:right;
+	overflow: hidden;
+	max-height:100%; 
+	max-width:100%;
+	border-bottom: 4px inset orangered;
+	
+	
+	
+	
+	
+}
+
+
+.Wblocks{
+	
+	width:50%;
+	float:left;
+	height:121%;
+	text-align: center;
+	
+	
+}
+.Wblocks:before{
+	content: "\a0";
+  	display: block;
+  	line-height: 1px;
+  	border-top: 4px inset orangered; 
+	
+	
+}
+
+
+.Wblocks img {
+	float:left;
+	overflow: hidden;
+	max-height:80%; 
+	max-width:80%;
+	border-bottom: 4px inset orangered;
+}
+
+.newstockblock{
+	height:500px;
+	font-size: 36px;
+	background-color: aliceblue;
+}
+
+#slideshow {
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.slide {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.gallery:before {
+  content: attr(title);
+  display: block;
+	padding-bottom:15px;
+}
+
+ul {
+  text-align: center;
+  padding: 10px;
+}
+
+li {
+  width: 25%;
+  display: inline-block;
+  vertical-align: bottom;
+	padding-left: 30px;
+	padding-bottom: 30px;
+	
+}
+
+li img {
+  max-width: 100%;
+  height: auto;
+	display:block;
+
+}
+
+
+
+.images{
+	position: relative;
+	display: block;
+	overflow: hidden;
+	top:0;
+	
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+	overflow: hidden;
+}
+
+
+.images:hover .overlay {
+  opacity: 0.7;
+	overflow: hidden;
+}
+
+.text {
+  color: white;
+  font-size: 2.3rem;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.buybutton {
+	background: none;
+	color: white;
+	border: none;	
+	font-weight: bold;
+	font-size: 2rem;
+	letter-spacing: 2px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+	font-family: MainFont;
+	padding-top: 97%;
+}
+
+.buybutton:hover {
+	background-color: black;
+	border: none;
+	text-decoration: underline orangered;
+	
+}
+
+.desc {
+	color:white;
+	padding-top: 10px;
+}
+
+h1{
+	color:white;
+	text-align: center;
+}
+h2{
+	color:white;
+	text-align: center;
+}
+h3{
+	font-size: 64;
+}
+
+.blocktext{
+	padding-top: 100px;
+}
+
+.video{
+	align-items: center;
+	width: auto;
+	height: auto;
+		
+
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */  
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+	
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: orangered;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	font-family: MainFont;
+	font-size: 20px;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  
+	
+	text-decoration: underline black;
+}
+.form-sheet{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	overflow: hidden;
+	text-align: left;
+	color: aliceblue;
+	font-size: 20px;
+	
+}
+
+.footer-text{
+	text-align: center;
+	font-display: auto;
+	color:aliceblue;
+}
+
+.slideshow-container{
+	max-width: 100%;
+	position: relative;
+	margin: auto;
+	
+}
+
+.mySlides{
+	display:none;
+}
+.mySlides img{
+	vertical-align: middle;
+	width:100%;
+		
+}
+.active {
+	background-color: #717171;
+}
+
+
+
+
+
+
