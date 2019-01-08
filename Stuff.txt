@@ -1,9 +1,8 @@
 -Browser/mobile support
 -images locked to div
 -move button to bottom 20px
--social media footer links
+
 - Shopping Cart
--search bar
 -Sign up for email popup
 -Privacy policy in footer
 -table for delivery <tb> <tr> maybe
