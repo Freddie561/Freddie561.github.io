@@ -1,5 +1,6 @@
 $(document).ready(function(){displayCart()})
-	
+
+
 
 
 
@@ -8,6 +9,13 @@ function changeBackgroundColor() {
 document.body.style.backgroundColor = "white";
 	console.log("Color changing");
 	test();
+}
+
+
+function privacyPolicy(){
+	if(window.confirm('If you click ok you will be redirected to the Privacy Policy, otherwise click cancel to carry on your browsing')){
+		window.location.href='https://www.superdry.com/privacy-policy';
+	}
 }
 
 
@@ -29,6 +37,7 @@ this.products=
 
 function addProductToCart(index){
     var cart = getCart()
+	
     cart.push(this.products[index]) //Add the product to the cart
     setCart(cart)
 }

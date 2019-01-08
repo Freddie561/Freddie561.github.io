@@ -2,8 +2,6 @@
 -images locked to div
 -move button to bottom 20px
 
-- Shopping Cart
--Sign up for email popup
--Privacy policy in footer
--table for delivery <tb> <tr> maybe
--store times maybe
+- Shopping Cart(add in new items
+
+
