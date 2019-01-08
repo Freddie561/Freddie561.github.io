@@ -33,16 +33,38 @@ this.products=
   { "image": "Assets/mens6.jpg", "name": "Retro Stripe Sweatshirt", "price": 4999 },
   { "image": "Assets/mens7.jpg", "name": "Real Logo 1st Hoodie", "price": 4999 },
   { "image": "Assets/mens8.jpg", "name": "Split Track Oversized Sweatshirt", "price": 5499 },
-  { "image": "Assets/mens9.jpg", "name": "Mega Logo Crew Neck Jumper", "price": 5999 }
+  { "image": "Assets/mens9.jpg", "name": "Mega Logo Crew Neck Jumper", "price": 5999 },
+  { "images":"Assets/womens1.jpg","name": "Blair Crew Sweatshirt", "price": 4999},	
+  { "images":"Assets/womens2.jpg","name": "Rylee Leather Biker Jacket", "price": 14999},		
+  { "images":"Assets/womens3.jpg","name": "Contak Down Stretch Jacket", "price": 10999},	
+  { "images":"Assets/womens4.jpg","name": "Summer Hooded SD-Windtrekker", "price": 7499},	
+  { "images":"Assets/womens5.jpg","name": "Atlas Padded Jacket", "price": 9999},	
+  { "images":"Assets/womens6.jpg","name": "Blair Crew Sweatshirt", "price": 4999},	
+  { "images":"Assets/womens7.jpg","name": "Lightweight Seersucker Shirt", "price": 3999},	
+  { "images":"Assets/womens8.jpg","name": "Breton Twist Back Top", "price": 2499},	
+  { "images":"Assets/womens9.jpg","name": "Vintage Logo Pastel Deboss Hoodie", "price": 4499},	
+  { "images":"Assets/newin1.jpg","name": "Performance Insulate Long Sleeve Top", "price": 7999},			
+  { "images":"Assets/newin2.jpg","name": "Japan Breakers Utility Jacket", "price": 9799},		
+  { "images":"Assets/newin3.jpg","name": "Oxygen Zip Hoodie", "price": 6999},		
+  { "images":"Assets/newin4.jpg","name": "Sport Windsprinter", "price": 6999},		
+  { "images":"Assets/newin5.jpg","name": "Gym Tech Stretch Joggers", "price": 5999},		
+  { "images":"Assets/newin6.jpg","name":"Core Loose Vest Top", "price": 2499},		
+  { "images":"Assets/newin7.jpg","name": "Athletico Crop Crew Sweatshirt", "price": 5499},		
+  { "images":"Assets/newin8.jpg","name": "Active Mesh Panel Leggings", "price": 4499},		
+  { "images":"Assets/newin9.jpg","name": "Performance Insulate Leggings", "price": 4899},
+ 
+	
 ]
 
 
 
 function addProductToCart(index){
     var cart = getCart()
-	
+	alert(this.products[index].name + " selected!")
     cart.push(this.products[index]) //Add the product to the cart
-    setCart(cart)
+    
+	
+	setCart(cart)
 	
 }
 

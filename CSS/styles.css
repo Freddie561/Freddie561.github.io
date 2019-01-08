@@ -10,7 +10,7 @@ a {
 	transition: all 0.5s;
 }
 a:hover {
-	background-color: black;
+	
 	border: none;
 	text-decoration: underline orangered;
 	
@@ -134,30 +134,13 @@ header{
 .menu-drop{
 	color: red;
 }
-.mensbutton{
-	background-color: orangered;
-	color: white;
-	padding: 10px;	
-	float: center;
-	font-weight: bold;
-	font-size: 14px;
-	letter-spacing: 2px;
-	transition: all 0.5s;
-	cursor: pointer;
-	margin: 5px;
-	box-shadow: 0 5px #999
-	
-}
 
 
 
-.mensbutton:hover {background-color: black}
 
-.mensbutton:active {
-  background-color: black;
-  box-shadow: 0 4px #666;
-  transform: translateY(4px);
-}
+
+
+
 
 
 .dropdown{
@@ -434,18 +417,18 @@ h3{
 }
 
 input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */  
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  width: 100%; 
+  padding: 12px;  
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  resize: vertical; 
 	
 }
 
-/* Style the submit button with a specific background color etc */
+
 input[type=submit] {
   background-color: orangered;
   color: white;
@@ -457,7 +440,7 @@ input[type=submit] {
 	font-size: 20px;
 }
 
-/* When moving the mouse over the submit button, add a darker green color */
+
 input[type=submit]:hover {
   
 	
