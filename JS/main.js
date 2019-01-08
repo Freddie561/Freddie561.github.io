@@ -27,7 +27,7 @@ this.products=
 	[
   { "image": "Assets/mens1.jpg", "name": "Everest Bomber Jacket", "price": 11999 },
   { "image": "Assets/mens2.jpg", "name": "Gym Tech Stretch Block Zip Hoodie", "price": 7499 },
-  { "image": "Assets/mens3.jpg", "name": "Everest Bomber Jacket", "price": 11999 },
+  { "image": "Assets/mens3.jpg", "name": "Everest Bomber Jacket Black", "price": 11999 },
   { "image": "Assets/mens4.jpg", "name": "Premium Goods Tri Infill Hoodie", "price": 4999 },
   { "image": "Assets/mens5.jpg", "name": "California Hoodie", "price": 7999 },
   { "image": "Assets/mens6.jpg", "name": "Retro Stripe Sweatshirt", "price": 4999 },

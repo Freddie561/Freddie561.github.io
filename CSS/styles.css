@@ -309,7 +309,7 @@ ul {
   vertical-align: bottom;
 	padding-left: 30px;
 	padding-bottom: 30px;
-	min-width:30%;
+	min-width:300px;
 	min-height: 30%;
 	
 }
@@ -348,6 +348,9 @@ ul {
 	overflow: hidden;
 	
 }
+
+
+
 
 
 .images:hover .overlay {
@@ -591,6 +594,7 @@ input[type=submit]:hover {
     display:none;
 	color: aliceblue;
 	position: absolute;
+	min-width: 300px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -599,6 +603,9 @@ input[type=submit]:hover {
 	 text-align: center;
 	  font-size: 18px;
   }
+}
+#mobile-content:hover{
+	text-decoration: underline orangered;
 }
 #clear-cart img{
 	position: absolute;
@@ -610,4 +617,19 @@ input[type=submit]:hover {
 }
 #cart-price{
 	font-size: 24px;
+}
+	
+
+#browser-title {
+	display:none;
+	text-align: center;
+}
+
+@media only screen and (min-width:700px){
+	#browser-title {
+		display:inline;
+		color:aliceblue;
+		
+		
+	}
 }
