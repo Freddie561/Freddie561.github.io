@@ -165,6 +165,11 @@ header{
 	padding:16px;
 	
 }
+.dropdown a{
+	color:white;
+	padding:5px;
+	font-size: 20px;
+}
 
 .dropdown .search-container{
 	float: right;
@@ -564,19 +569,20 @@ input[type=submit]:hover {
 	text-align: left;
 }
 
-#cartModal{
+#cartModel{
 	background-color: white;
-	width:80%;
+	width:30%;
 	height:80%;
 	border: 2px solid orangered;
 	overflow: hidden;
+	
 }
 .title {
 	font-size: 20px;
 	color: aliceblue;
 	
 }
-.modal{
+.model{
 	
 	
 	align-items: flex-start;
@@ -610,4 +616,15 @@ input[type=submit]:hover {
 	 text-align: center;
 	  font-size: 18px;
   }
+}
+#clear-cart img{
+	position: absolute;
+	bottom: 0;
+	right:0;
+}
+.cart-price-title{
+	padding-top: 20%;
+}
+#cart-price{
+	font-size: 24px;
 }

@@ -2,7 +2,10 @@ $(document).ready(function(){displayCart()})
 
 
 
-
+function deleteCart(){
+	localStorage.clear()
+	location.reload();
+}
 
 
 function changeBackgroundColor() {
@@ -40,6 +43,7 @@ function addProductToCart(index){
 	
     cart.push(this.products[index]) //Add the product to the cart
     setCart(cart)
+	
 }
 
 function getCart() {
