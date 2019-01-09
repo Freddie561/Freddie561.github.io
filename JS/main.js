@@ -21,6 +21,11 @@ function privacyPolicy(){
 	}
 }
 
+function cartBuy(){
+	alert('Items Purchased, Thank you!');
+}
+	
+
 
 
 this.products=

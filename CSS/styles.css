@@ -653,6 +653,23 @@ input[type=submit]:hover {
 #cart-price{
 	font-size: 24px;
 }
+.cart-buy{
+	background: none;
+	color: black;
+	border: none;	
+	font-weight: bold;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	margin: 5px;
+	font-family: MainFont;
+	padding-top: 50px;
+}
+
+.cart-buy:hover {
+	text-decoration: underline orangered;
+}
+
 	
 
 #browser-title {
