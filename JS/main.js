@@ -34,7 +34,7 @@ this.products=
   { "image": "Assets/mens2.jpg", "name": "Vintage Logo Hoodie", "price": 4999 },
   { "image": "Assets/mens3.jpg", "name": "Everest Bomber Jacket Black", "price": 11999 },
   { "image": "Assets/mens4.jpg", "name": "Premium Goods Tri Infill Hoodie", "price": 4999 },
-  { "image": "Assets/mens5.jpg", "name": "California Hoodie", "price": 7999 },
+  { "image": "Assets/mens5.jpg", "name": "California Hoodie", "price": 5599 },
   { "image": "Assets/mens6.jpg", "name": "Retro Stripe Sweatshirt", "price": 4999 },
   { "image": "Assets/mens7.jpg", "name": "Real Logo 1st Hoodie", "price": 4999 },
   { "image": "Assets/mens8.jpg", "name": "Split Track Oversized Sweatshirt", "price": 5499 },

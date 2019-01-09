@@ -526,22 +526,10 @@ input[type=submit]:hover {
 .social-facebook{
 	background-position: -33px 0;
 }
-.footer-info{
-	display:block;
-	font-display: auto;
-	color:aliceblue;
-	font-size: 20px;
-	text-align: right;
-	float:right;
-	line-height: 1rem;
-	 
-}
-.footer-info:hover {
-	text-decoration: underline orangered;
-}
+
 .footer-policies{
 
-	text-align: center;
+	text-align: right;
 	display:block;
 	font-display: auto;
 	color:aliceblue;
@@ -697,6 +685,7 @@ input[type=submit]:hover {
 	text-align: center;
 	cursor: pointer;
 	font-family: MainFont;
+	
 }
 
 .removeQuantity:hover {
