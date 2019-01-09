@@ -45,6 +45,7 @@ nav{
 	padding-left:3%;
 	padding-right:3%;
 	text-align: right;
+	overflow: hidden;
 	
 	
 	
@@ -356,6 +357,7 @@ ul {
 .images:hover .overlay {
   opacity: 0.7;
 	overflow: hidden;
+	max-width: 450px;
 }
 
 .text {
