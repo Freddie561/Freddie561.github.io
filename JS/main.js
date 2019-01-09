@@ -65,11 +65,30 @@ this.products=
 
 function addProductToCart(index){
     var cart = getCart()
-	alert(this.products[index].name + " selected!")
-    cart.push(this.products[index]) //Add the product to the cart
-    
 	
-	setCart(cart)
+	var product
+	
+	for(i = 0; i < cart.length; i++){
+		if(cart[i].index == index){
+			product = cart[i]
+			break
+		}
+		
+	}
+	
+	if(product == undefined){
+		product = this.products[index]
+		product.index = index
+		product.quantity = 1
+		cart.push(product)//Add the product to the cart
+	} else{
+			
+		product.quantity += 1
+	}
+	
+	
+	alert(this.products[index].name + " selected!")
+    setCart(cart)
 	
 }
 
@@ -83,26 +102,71 @@ function getCart() {
 }
 
 function setCart(cart) {
-  var cartJSON = JSON.stringify(cart)
+  	var cartJSON = JSON.stringify(cart)
   localStorage.setItem('cart', cartJSON)
   displayCart();
 }
 
-function displayCart(){
-	var i;
-	var total = 0;
-	var cart = getCart(); //gets the cart
-	
-	var cartItems = document.getElementById("cart-items")
-	cartItems.innerHTML = ""
-	for(i = 0; i < cart.length; i++){
-		total += cart[i].price;
-	cartItems.innerHTML += "<li>" + cart[i].name + " £" + (cart[i].price/100).toString() + "</li>"
+function displayCart() {
+    // get the cart
+    var cart = getCart()
+
+    // figure out the total
+    var i;
+    var total = 0;
+    for(i = 0; i < cart.length; i++) {
+        total += cart[i].price * cart[i].quantity;
+    }
+
+    // display it all nice
+	var cartPrice = document.getElementById("cart-price") 
+	if(cartPrice !=null){
+		
+    	cartPrice.innerHTML = "£" + (total/100).toFixed(2);
+		
 	}
-	document.getElementById("cart-price").innerHTML = "£" + (total/100).toString();
+    // unless we have a cart-items element, we're done here
+    var cartItems = document.getElementById("cart-items")
+    if (!cartItems) { return }
+
+    // if we do though, display all the products one by one
+    cartItems.innerHTML = ""
+	var onClick= ""
+	var text= ""
+	var button= ""
+    for(i = 0; i < cart.length; i++) {
+		
+		
+		onClick = "removeProductFromCart(" + cart[i].index + ")"
+		text = cart[i].quantity + " x " + cart[i].name + ": £" + (cart[i].price * cart[i].quantity / 100).toFixed(2)
+		button = "<button class=\"removeQuantity\" onclick=\"" + onClick + "\">Remove One</button>"
+		cartItems.innerHTML += "<li>" + text + button + "</li>"
+    }
+}			
+
+
+function removeProductFromCart(index) {
+    var cart = getCart()
+
+    var product
+    for(i = 0; i < cart.length; i++) {
+        if (cart[i].index == index) {
+            product = cart[i]
+            productIndex = i
+            break
+        }
+    }
+
+    if (product == undefined) { return } 
+
+    if (product.quantity > 1) {
+        product.quantity -= 1
+    } else {
+        cart.splice(i, 1);
+    }
+
+    setCart(cart)
 }
-
-
 
 
 
