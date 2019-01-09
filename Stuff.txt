@@ -1,7 +1,8 @@
-mobile support
--images locked to div
--responsive images
--change buttons on main page to links but look like buttons
-- Shopping Cart(add in new items)
+mobile support(need to find home page 2nd parralax block)
+
+
+
+- Shopping Cart
+
 
 

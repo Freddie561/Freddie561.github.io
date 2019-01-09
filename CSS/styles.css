@@ -223,7 +223,7 @@ header{
 	height:80%;
 	text-align: center;
 	min-width: 400px;
-	font-size: 2.4vmax;
+	font-size: 3vmax;
 	
 	
 	
@@ -257,7 +257,7 @@ header{
 	float:left;
 	height:121%;
 	text-align: center;
-	font-size: 2.4vmax;
+	font-size: 3vmax;
 	min-width:400px;
 	
 	
@@ -278,8 +278,25 @@ header{
 	max-height:80%; 
 	max-width:80%;
 	border-bottom: 4px inset orangered;
+	min-width:400px;
 }
-
+@media only screen and (max-width: 600px) {
+	.Wblocks{
+		color:aliceblue;
+		background-color: black;
+		height:300px;
+	
+}
+}	
+@media only screen and (max-width:600px){
+		.blocks{
+		color:aliceblue;
+		background-color: black;
+		height:300px;
+			
+		}
+	}
+	
 .newstockblock{
 	height:500px;
 	font-size: 36px;
@@ -418,6 +435,7 @@ h3{
 
 .blocktext{
 	padding-top:50 px;
+	min-width: 300px;
 }
 
 .video{
