@@ -180,7 +180,9 @@ header{
 	font-size:36px;
 	background-color: #EAE9E5;
 	width: 100%;
-	
+	min-width: 400px;
+	font-size: 4vw;
+	min-height: 551px;
 }
 .womensblock{
 	height:500px;
@@ -220,6 +222,9 @@ header{
 	float:left;
 	height:80%;
 	text-align: center;
+	min-width: 400px;
+	font-size: 2.4vmax;
+	
 	
 	
 	
@@ -252,6 +257,8 @@ header{
 	float:left;
 	height:121%;
 	text-align: center;
+	font-size: 2.4vmax;
+	min-width:400px;
 	
 	
 }
@@ -410,7 +417,7 @@ h3{
 }
 
 .blocktext{
-	padding-top: 100px;
+	padding-top:50 px;
 }
 
 .video{
