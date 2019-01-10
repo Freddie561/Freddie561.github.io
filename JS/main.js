@@ -1,32 +1,25 @@
-$(document).ready(function(){displayCart()})
+$(document).ready(function(){displayCart()}) //Fires displayCart() when DOM is loaded
 
 
-
+//Removes all Local Storage as a way to delete the cart
 function deleteCart(){
 	localStorage.clear()
 	location.reload();
 }
 
 
-function changeBackgroundColor() {
-document.body.style.backgroundColor = "white";
-	console.log("Color changing");
-	test();
-}
 
 
-function privacyPolicy(){
-	if(window.confirm('If you click ok you will be redirected to the Privacy Policy, otherwise click cancel to carry on your browsing')){
-		window.location.href='https://www.superdry.com/privacy-policy';
-	}
-}
+
+
+//Function is created to show the user that the something has been added to the cart. This can be improved by having a dropdown that only shows instead in css
 
 function cartBuy(){
 	alert('Items Purchased, Thank you!');
 }
 	
 
-
+//Array of items that are imported
 
 this.products=
 	[
@@ -62,7 +55,7 @@ this.products=
 ]
 
 
-
+//function that adds to the cart
 function addProductToCart(index){
     var cart = getCart()
 	
@@ -76,18 +69,18 @@ function addProductToCart(index){
 		
 	}
 	
-	if(product == undefined){
+	if(product == undefined){ //checks to see if the product has been already added
 		product = this.products[index]
 		product.index = index
 		product.quantity = 1
-		cart.push(product)//Add the product to the cart
+		cart.push(product) //Add the product to the cart if it hasn't already been added
 	} else{
 			
-		product.quantity += 1
+		product.quantity += 1 //else adds the quantity to the cart instead
 	}
 	
 	
-	alert(this.products[index].name + " selected!")
+	alert(this.products[index].name + " selected!") //alerts the user that the item has been added
     setCart(cart)
 	
 }
@@ -101,42 +94,46 @@ function getCart() {
   return cart
 }
 
+//This function creates an empty cart, ready for use
+
 function setCart(cart) {
   	var cartJSON = JSON.stringify(cart)
   localStorage.setItem('cart', cartJSON)
   displayCart();
 }
 
+
+
 function displayCart() {
-    // get the cart
+    //Get the cart
     var cart = getCart()
 
-    // figure out the total
+    //Figure out the total of the cart
     var i;
     var total = 0;
     for(i = 0; i < cart.length; i++) {
         total += cart[i].price * cart[i].quantity;
     }
 
-    // display it all nice
+    //Display the cart clearly
 	var cartPrice = document.getElementById("cart-price") 
 	if(cartPrice !=null){
 		
     	cartPrice.innerHTML = "£" + (total/100).toFixed(2);
 		
 	}
-    // unless we have a cart-items element, we're done here
+    //Unless we have a cart-items element, we're done here
     var cartItems = document.getElementById("cart-items")
     if (!cartItems) { return }
 
-    // if we do though, display all the products one by one
+    //If we do though, display all the products one by one
     cartItems.innerHTML = ""
 	var onClick= ""
 	var text= ""
 	var button= ""
     for(i = 0; i < cart.length; i++) {
 		
-		
+		//Displaying the carts, creating three main vars(onClick, text, button). Bottom line it displaying text and button in a clear way
 		onClick = "removeProductFromCart(" + cart[i].index + ")"
 		text = cart[i].quantity + " x " + cart[i].name + ": £" + (cart[i].price * cart[i].quantity / 100).toFixed(2)
 		button = "<button class=\"removeQuantity\" onclick=\"" + onClick + "\">Remove One</button>"
@@ -144,9 +141,9 @@ function displayCart() {
     }
 }			
 
-
+//Function to remove product from cart
 function removeProductFromCart(index) {
-    var cart = getCart()
+    var cart = getCart() //Get the cart
 
     var product
     for(i = 0; i < cart.length; i++) {
@@ -159,12 +156,13 @@ function removeProductFromCart(index) {
 
     if (product == undefined) { return } 
 
+	//If the quantity is more than 1, the function will remove one of the quantity. Else it will splice it instead and remove the entire product from the cart
     if (product.quantity > 1) {
         product.quantity -= 1
     } else {
         cart.splice(i, 1);
     }
-
+//displays cart
     setCart(cart)
 }
 
